@@ -7,34 +7,6 @@ function donothing_brain(body)
 	local stuck_and_wiggle_count = body.values[5] or 0
 	local movement_dir = body.values[6]
 
-	if movement_dir == 0 then
-		local randval = rand_int(1,3)
-		if randval == 1 then
-			movement_dir = -1
-		else
-			movement_dir = 1
-		end
-	end
-
-	vel_x = body.vel_x
-	vel_y = body.vel_y
-
-    brain.movement = brain.movement or 0
-    brain.rotation = brain.rotation or 0
-
-	if body.wall_dist > 100 then
-		brain.movement = 1
-		local target_x = body.cost_center_x + (body.wall_dx * -1200)
-		local target_y = body.cost_center_y + (body.wall_dy * -1200)
-		move_towards(body, brain, target_x, target_y)
-        --if body.wall_dist < 50 then
-            brain.ability = true
-        --end
-	else
-		brain.ability = true
-		brain.movement = 0.0* movement_dir
-	end
-
 
     -- Update any custom brain values
     brain.values = {}
