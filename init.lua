@@ -304,7 +304,7 @@ function M.post(api, config)
 		)
 		register_creature(
 			api.acquire_id("primordialis_unginged.chariot2"),
-			"data/scripts/lua_mods/mods/Primordialis-Unhinged/body plans/chariot2.bod",
+			"data/scripts/lua_mods/mods/Primordialis-Unhinged/body plans/charot_2.bod",
 			"default_brain"
 		)
 		register_creature(
