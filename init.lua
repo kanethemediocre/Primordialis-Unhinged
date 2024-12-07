@@ -35,66 +35,94 @@ function M.post(api, config)
 		local r = { old_creature_list(...) }
 
 		-- register our creatures
-		register_creature(api.acquire_id("primordialis_unginged.snail_bomb"), "body plans/SNAILBOMB.bod", "snail_brain")
-		register_creature(api.acquire_id("primordialis_unginged.snail2"), "body plans/SNAIL2.bod", "snail_brain")
-		register_creature(api.acquire_id("primordialis_unginged.snail3"), "body plans/SNAIL3.bod", "snail_brain")
-		register_creature(api.acquire_id("primordialis_unginged.snail4"), "body plans/SNAIL4.bod", "snail_brain")
-		register_creature(api.acquire_id("primordialis_unginged.snail5"), "body plans/SNAIL5.bod", "snail_brain")
+		register_creature(
+			api.acquire_id("primordialis_unginged.snail_bomb"),
+			"data/scripts/lua_mods/mod/Primordialis-Unhinged/body plans/SNAILBOMB.bod",
+			"snail_brain"
+		)
+		register_creature(
+			api.acquire_id("primordialis_unginged.snail2"),
+			"data/scripts/lua_mods/mod/Primordialis-Unhinged/body plans/SNAIL2.bod",
+			"snail_brain"
+		)
+		register_creature(
+			api.acquire_id("primordialis_unginged.snail3"),
+			"data/scripts/lua_mods/mod/Primordialis-Unhinged/body plans/SNAIL3.bod",
+			"snail_brain"
+		)
+		register_creature(
+			api.acquire_id("primordialis_unginged.snail4"),
+			"data/scripts/lua_mods/mod/Primordialis-Unhinged/body plans/SNAIL4.bod",
+			"snail_brain"
+		)
+		register_creature(
+			api.acquire_id("primordialis_unginged.snail5"),
+			"data/scripts/lua_mods/mod/Primordialis-Unhinged/body plans/SNAIL5.bod",
+			"snail_brain"
+		)
 		register_creature(
 			api.acquire_id("primordialis_unginged.caterpillar_hard"),
-			"body plans/caterpillar_hard1.bod",
+			"data/scripts/lua_mods/mod/Primordialis-Unhinged/body plans/caterpillar_hard1.bod",
 			"snail_brain"
 		)
 		register_creature(
 			api.acquire_id("primordialis_unginged.caterpillar_basic"),
-			"body plans/caterpillar_basic1.bod",
+			"data/scripts/lua_mods/mod/Primordialis-Unhinged/body plans/caterpillar_basic1.bod",
 			"snail_brain"
 		)
 		register_creature(
 			api.acquire_id("primordialis_unginged.caterpillar_spike1"),
-			"body plans/caterpillar_spike1.bod",
+			"data/scripts/lua_mods/mod/Primordialis-Unhinged/body plans/caterpillar_spike1.bod",
 			"snail_brain"
 		)
 		register_creature(
 			api.acquire_id("primordialis_unginged.caterpillar_spike2"),
-			"body plans/caterpillar_spike2.bod",
+			"data/scripts/lua_mods/mod/Primordialis-Unhinged/body plans/caterpillar_spike2.bod",
 			"snail_brain"
 		)
 		register_creature(
 			api.acquire_id("primordialis_unginged.caterpillar_poison"),
-			"body plans/caterpillar_poison1.bod",
+			"data/scripts/lua_mods/mod/Primordialis-Unhinged/body plans/caterpillar_poison1.bod",
 			"snail_brain"
 		)
 		register_creature(
 			api.acquire_id("primordialis_unginged.caterpillar_venom"),
-			"body plans/caterpillar_venom1.bod",
+			"data/scripts/lua_mods/mod/Primordialis-Unhinged/body plans/caterpillar_venom1.bod",
 			"snail_brain"
 		)
 		register_creature(
 			api.acquire_id("primordialis_unginged.caterpillar_light"),
-			"body plans/caterpillar_light1.bod",
+			"data/scripts/lua_mods/mod/Primordialis-Unhinged/body plans/caterpillar_light1.bod",
 			"snail_brain"
 		)
 		register_creature(
 			api.acquire_id("primordialis_unginged.antenna_bug2"),
-			"body plans/antenna_bug2.bod",
+			"data/scripts/lua_mods/mod/Primordialis-Unhinged/body plans/antenna_bug2.bod",
 			"default_brain"
 		)
-		register_creature(api.acquire_id("primordialis_unginged.grub2"), "body plans/grub2.bod", "default_brain")
+		register_creature(
+			api.acquire_id("primordialis_unginged.grub2"),
+			"data/scripts/lua_mods/mod/Primordialis-Unhinged/body plans/grub2.bod",
+			"default_brain"
+		)
 		register_creature(
 			api.acquire_id("primordialis_unginged.shield_crab2"),
-			"body plans/shield_crab2.bod",
+			"data/scripts/lua_mods/mod/Primordialis-Unhinged/body plans/shield_crab2.bod",
 			"default_brain"
 		)
 		register_creature(
 			api.acquire_id("primordialis_unginged.starfox_boss"),
-			"body plans/starfoxboss1.bod",
+			"data/scripts/lua_mods/mod/Primordialis-Unhinged/body plans/starfoxboss1.bod",
 			"primordialis_unginged.donothing_brain"
 		)
-		register_creature(api.acquire_id("primordialis_unginged.chariot2"), "body plans/chariot2.bod", "default_brain")
+		register_creature(
+			api.acquire_id("primordialis_unginged.chariot2"),
+			"data/scripts/lua_mods/mod/Primordialis-Unhinged/body plans/chariot2.bod",
+			"default_brain"
+		)
 		register_creature(
 			api.acquire_id("primordialis_unginged.autosnek"),
-			"body plans/autosnek1.bod",
+			"data/scripts/lua_mods/mod/Primordialis-Unhinged/body plans/autosnek1.bod",
 			"primordialis_unginged.donothing_brain"
 		)
 		-- return the result of the original, not strictly neccesary here but useful in some situations
